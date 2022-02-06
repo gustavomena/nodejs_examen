@@ -105,6 +105,7 @@ async (req, res) =>{
     
           req.on("end", async () => {
             const data = Object.values(JSON.parse(body))
+            console.log(data);
             const dbResponse = await dbAction.setTransfer(data);
             res.statusCode = 201;
             res.end(JSON.stringify(dbResponse));
@@ -122,6 +123,7 @@ async (req, res) =>{
         try {
           const dbResponse = await dbAction.getTransfers();
           res.statusCode = 200;
+          
           res.end(JSON.stringify(dbResponse.rows));
           
         } catch (error) {
