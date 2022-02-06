@@ -1,14 +1,15 @@
 {
-  "name": "desafio10",
+  "name": "nodejs_examen",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "private/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.25.0",
     "pg": "^8.7.1"
   }
 }
